@@ -1,0 +1,27 @@
+CREATE KEYSPACE cs286 WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};
+CREATE TABLE cs286.ad_data (
+								ad_iD text PRIMARY KEY, 
+								click text, 
+								hour int,
+								c1 int,
+								banner_pos int,
+								site_id text,
+								site_domain text,
+								site_category text,
+								app_id text,
+								app_domain text,
+								app_category text,
+								device_id text,
+								device_ip text,
+								device_model text,
+								device_type int,
+								device_conn_type int,
+								c14 int,
+								c15 int,
+								c16 int,
+								c17 int,
+								c18 int,
+								c19 int,
+								c20 int,
+								c21 int
+								);
